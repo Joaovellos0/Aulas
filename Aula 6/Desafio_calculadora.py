@@ -16,8 +16,6 @@ def divisao(x,y):
     resultado_divisao = x / y
     return resultado_divisao
 
-
-
 while True:
     x = float(input("Digite um numero: "))
     y = float(input("Digite outro numero: "))
