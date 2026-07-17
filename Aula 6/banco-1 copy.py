@@ -67,12 +67,25 @@ while True:
         print("Uusário não existe")
     
     if usuario_digitado == usuario:
-        while True:
-            senha_digitada = input("Digite sua senha\n")
-            if senha_digitada != senha:
-                print("Senha incorreta. Tente novamente")
 
-            else:
+        tentativas = 0
+        limite_de_tentativas = 3
+
+        while tentativas < limite_de_tentativas:
+
+            senha_digitada = input("Digite sua senha\n")
+
+            if senha_digitada == senha:
                 menu()
+           
+            if senha_digitada != senha:
+                tentativas = tentativas + 1
+                print("Senha incorreta. Tente novamente")
+            
+            if tentativas == limite_de_tentativas:
+                print("Acesso bloqueado.")
+        break
+
+      
             
     
