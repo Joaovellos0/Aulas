@@ -1,4 +1,6 @@
 import os
+import gemini 
+
 # Operações básicas: Saque, Saldo, Deposito
 # Operações avançadas: Login, Impressão de Recibo, Suporte, Cofrinho
 
@@ -37,7 +39,7 @@ def menu():
     saldo_cofrinho = 0
 
     while True:
-        escolha_usuario = int(input("Menu\n1-Saldo\n2-Saque\n3-Deposito\n4-Cofrinho\n0-Sair\n"))
+        escolha_usuario = int(input("Menu\n1-Saldo\n2-Saque\n3-Deposito\n4-Cofrinho\n5-Falar com suporte\n0-Sair\n"))
 
         if escolha_usuario == 1:
             limpar()
@@ -53,6 +55,9 @@ def menu():
         
         elif escolha_usuario == 4:
             saldo_cofrinho = cofrinho(saldo_cofrinho)
+    
+        elif escolha_usuario == 5:
+            gemini.perguntar_na_ia()
 
         elif escolha_usuario == 0:
             limpar()
