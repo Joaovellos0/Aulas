@@ -1,6 +1,6 @@
 from google import genai
 
-client = genai.Client(api_key="AQ.Ab8RN6I_JoAjWs4dLOzJcyxae_NPtpGBDngQd8hDl1n4Ys4LGg")
+client = genai.Client(api_key=)
 
 def perguntar_na_ia():
     interaction_id = None
