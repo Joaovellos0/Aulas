@@ -1,0 +1,7 @@
+canal = {
+    "SYSBOOT_NEBULA":"Z.~-V_I.Z~-E_M.Z~-O_S.Z~-E_M.Z~-P_A.Z~-Z",
+    "LATENCY_GATEWAY":"N.Z~-_A.Z~-_O.Z~-_H.Z~-_O.Z~-_S.Z~-_T.Z~-_I.Z~-_S",
+    "PR0T0C0L0_K":"Z_.-~I~.-Z_N-~.Z_V~.-_ZA~.-_S~.-_ZA~.-_O~.-_Z",
+    "MEM_LEAK_PR0_JITTER":"P.Z~-_R.Z~-_E.Z~-_C.Z~-_I.Z~-_S.Z~-_A.Z~-_M.Z~-_O.Z~-_S",
+    "STACK_OV_L0_K":"S.Z~-_O.Z~-_M.Z~-_O.Z~-_S.Z~-_A.Z~-_M.Z~-_I.Z~-_G.Z~-_O.Z~-_S"
+}

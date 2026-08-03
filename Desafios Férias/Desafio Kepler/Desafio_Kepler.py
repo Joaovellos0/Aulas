@@ -1,0 +1,10 @@
+#indices = [14, 29, 42]
+
+fluxo = ["SYS_BOOT", "LOAD_01", "NOISE_X", "GARBAGE", "DAT_55", "MEM_LEAK", "ERR_404", "NULL_PTR", "STACK_OV", "BIOS_CHK", "CPU_HOT", "DISK_FULL", "NET_DOWN", "PING_OUT", "PR0", "PKT_LOSS", "JITTER", "LATENCY", "BANDWIDTH", "THROUGH", "FIREWALL", "PROXY_ERR", "DNS_FAIL", "DHCP_NAK", "IP_CNFLT", "SUBNET", "GATEWAY", "ROUTER", "SWITCH_OFF", "T0C0", "FIBER_CUT", "SIGNAL_0", "INTERFR", "STATIC_X", "WHITE_NS", "RAD_HIGH", "SOLAR_FL", "MAG_STRM", "GRAV_WAV", "LIGO_DET", "QUASAR", "PULSAR", "L0_K", "NEBULA", "SUPERNOV"]
+
+PR0T0C0L0_K = "Z_.-~I~.-Z_N-~.Z_V~.-_ZA~.-_S~.-_ZA~.-_O~.-_Z"
+
+codigo = fluxo[14] + fluxo[29] + fluxo[42]
+
+mensagem_limpa = PR0T0C0L0_K.replace("Z","").replace("_","").replace(".","").replace("-","").replace("~","")
+print(mensagem_limpa)

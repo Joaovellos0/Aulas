@@ -1,0 +1,31 @@
+# --- ARQUIVO DE DADOS CONFIDENCIAIS: CASO CODEFELLER ---
+
+# ETAPA 2: TRANSAÇÕES FINANCEIRAS (A Motivação)
+# Objetivo: Gerar uma lista com o nome dos suspeitos que receberam mais de R$ 100.000,00 no total.
+
+transacoes_bancarias = [
+    {"beneficiario": "Julia (Curadora)", "valor": 17000.00},
+    {"beneficiario": "Mercado Local", "valor": 500.00},
+    {"beneficiario": "Elias (Sócio)", "valor": 15000.00},
+    {"beneficiario": "Manutenção Mansão", "valor": 2000.00},
+    {"beneficiario": "Julia (Curadora)", "valor": 22000.00},
+    {"beneficiario": "Veronica (Sobrinha)", "valor": 25000.00},
+    {"beneficiario": "Elias (Sócio)", "valor": 20000.00},
+    {"beneficiario": "Galeria de Arte", "valor": 5000.00},
+    {"beneficiario": "Julia (Curadora)", "valor": 12000.00},
+    {"beneficiario": "Veronica (Sobrinha)", "valor": 45000.00},
+    {"beneficiario": "Mercado Local", "valor": 1200.00},
+    {"beneficiario": "Manutenção Mansão", "valor": 4000.00},
+    {"beneficiario": "Julia (Curadora)", "valor": 35000.00},
+    {"beneficiario": "Restaurante Luxo", "valor": 1500.00},
+    {"beneficiario": "Elias (Sócio)", "valor": 10000.00},
+    {"beneficiario": "Veronica (Sobrinha)", "valor": 35000.00},
+    {"beneficiario": "Julia (Curadora)", "valor": 8000.00},
+    {"beneficiario": "Clube de Golfe", "valor": 3000.00},
+    {"beneficiario": "Elias (Sócio)", "valor": 50000.00},
+    {"beneficiario": "Mordomo Godfrey", "valor": 5000.00},
+    {"beneficiario": "Veronica (Sobrinha)", "valor": 1200.00},
+    {"beneficiario": "Elias (Sócio)", "valor": 20000.00},
+    {"beneficiario": "Mercado Local", "valor": 5000.00},
+    {"beneficiario": "Julia (Curadora)", "valor": 15000.00},
+]

@@ -1,0 +1,8 @@
+# --- ARQUIVO DE DADOS CONFIDENCIAIS: CASO CODEFELLER ---
+
+# ETAPA 3: DECODIFICAÇÃO
+# Decifrar a hora: concatenar indice 0 e indice 1.
+
+dados_tablet = [
+    888, 890, 892, 906, 906, 902, 855, 894, 888, 905, 888, 901, 907, 896, 891, 902
+]

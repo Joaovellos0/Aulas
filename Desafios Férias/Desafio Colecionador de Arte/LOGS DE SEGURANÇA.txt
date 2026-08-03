@@ -1,0 +1,50 @@
+# --- ARQUIVO DE DADOS CONFIDENCIAIS: CASO CODEFELLER ---
+
+# ETAPA 1: LOGS DE SEGURANÇA (O Álibi)
+# O Crime ocorreu entre 21.00 e 22.00
+# Regra de Suspeição: Estar DENTRO da mansão nesse intervalo.
+
+logs_seguranca = [
+    {"nome": "Jardineiro Chefe", "ent": 7.00, "sai": 16.30},
+    {"nome": "Faxineira A", "ent": 8.00, "sai": 17.00},
+    {"nome": "Faxineira B", "ent": 8.00, "sai": 17.00},
+    {"nome": "Faxineira C", "ent": 8.00, "sai": 17.00},
+    {"nome": "Segurança Diurno A", "ent": 6.00, "sai": 18.00},
+    {"nome": "Segurança Diurno B", "ent": 6.00, "sai": 18.00},
+    {"nome": "Cozinheira Principal", "ent": 14.00, "sai": 22.30},
+    {"nome": "Auxiliar de Cozinha 1", "ent": 14.00, "sai": 22.30},
+    {"nome": "Auxiliar de Cozinha 2", "ent": 14.00, "sai": 22.30},
+    {"nome": "Auxiliar de Cozinha 3", "ent": 14.00, "sai": 22.30},
+    {"nome": "Mordomo Godfrey", "ent": 18.00, "sai": 23.55},
+    {"nome": "Entregador Buffet", "ent": 19.30, "sai": 20.15},
+    {"nome": "Veronica (Sobrinha)", "ent": 20.00, "sai": 23.40},
+    {"nome": "Elias (Sócio)", "ent": 19.15, "sai": 22.45},
+    {"nome": "Julia (Curadora)", "ent": 21.30, "sai": 23.10}, 
+    {"nome": "Convidado: Barão Von Code", "ent": 20.00, "sai": 22.45},
+    {"nome": "Convidada: Lady Java", "ent": 20.15, "sai": 21.30},
+    {"nome": "Convidado: Sr. C++", "ent": 20.30, "sai": 22.15},
+    {"nome": "Convidado: Conde PHP", "ent": 21.05, "sai": 23.00},
+    {"nome": "Convidada: Duquesa Ruby", "ent": 19.50, "sai": 22.50},
+    {"nome": "Convidado: Lorde Assembly", "ent": 18.00, "sai": 20.30},
+    {"nome": "Convidada: Srta. Python", "ent": 20.45, "sai": 23.15},
+    {"nome": "Convidado: General Go", "ent": 21.00, "sai": 21.45},
+    {"nome": "Convidada: Madame Swift", "ent": 20.10, "sai": 21.50},
+    {"nome": "Convidado: Capitão Rust", "ent": 21.15, "sai": 23.45},
+    {"nome": "Garçom 01", "ent": 18.30, "sai": 23.30},
+    {"nome": "Garçom 02", "ent": 18.30, "sai": 23.30},
+    {"nome": "Garçom 03", "ent": 18.30, "sai": 23.30},
+    {"nome": "Garçom 04", "ent": 18.30, "sai": 23.30},
+    {"nome": "Barman Chefe", "ent": 19.00, "sai": 23.45},
+    {"nome": "Assistente Barman", "ent": 19.00, "sai": 23.45},
+    {"nome": "Músico: Pianista", "ent": 19.30, "sai": 22.15},
+    {"nome": "Músico: Violinista", "ent": 19.30, "sai": 22.15},
+    {"nome": "Fotógrafo do Evento", "ent": 19.45, "sai": 23.00},
+    {"nome": "Decorador", "ent": 10.00, "sai": 15.00},
+    {"nome": "Entregador de Gelo", "ent": 20.30, "sai": 20.45},
+    {"nome": "Técnico de Som", "ent": 18.00, "sai": 23.00},
+    {"nome": "Segurança Noturno A", "ent": 18.00, "sai": 6.00}, 
+    {"nome": "Segurança Noturno B", "ent": 18.00, "sai": 6.00}, 
+    {"nome": "Motorista Particular", "ent": 00.15, "sai": 02.00},
+    {"nome": "Entregador Pizza", "ent": 01.30, "sai": 01.45},
+    {"nome": "Vizinho Curioso", "ent": 23.10, "sai": 23.20}
+]
