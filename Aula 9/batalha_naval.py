@@ -37,7 +37,7 @@ while True:
         escolha_coluna_jogador = int(input("Escolha uma coluna:"))
         limpar()
 
-        if mapa_maquina[escolha_linha_jogador][escolha_coluna_jogador]:
+        if mapa_maquina[escolha_linha_jogador][escolha_coluna_jogador] == "x":
             continue
         else:
             break
