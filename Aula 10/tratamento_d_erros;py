@@ -1,0 +1,17 @@
+# try:
+    
+#     print(x)
+
+# except:
+
+#     print("Ocorreu um erro.")
+
+#     print("Tente novamente.")
+
+
+try:
+  print("joao" * "joao")
+except(NameError):
+  print("Variavel nao definida.")
+except:
+  print("Ocorreu um erro.")
