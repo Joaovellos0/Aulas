@@ -1,0 +1,42 @@
+h1 {
+  color: #df6501;
+  background-color: black;
+  font-family: cursive;
+  font-size: xx-large;
+}
+
+body {
+  background-color: #503d28;
+  text-align: center;
+}
+
+h2 {
+  color: #df6501;
+  background-color: black;
+  font-family: cursive;
+  font-size: xx-large;
+}
+
+section {
+  background-color: #d4b990;
+  width: 98%;
+
+  border-radius: 1rem;
+  padding-bottom: 0.5px;
+}
+
+p {
+  color: #df6501;
+  background-color: #000000;
+  width: 50%;
+  text-align: center;
+  margin: 2px auto;
+}
+
+li {
+  color: #df6501;
+  background-color: #000000;
+  width: 50%;
+  text-align: center;
+  margin: 1px auto;
+}
