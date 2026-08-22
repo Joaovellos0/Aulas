@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(145, 144, 144);
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: rgb(22, 22, 22);
+  border: 2px solid white;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: white;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+img {
+  height: 30px;
+  margin: 1px;
+  border: 1px solid white;
+}
+
+.formulario {
+  background-color: rgb(22, 22, 22);
+  border: 1px solid white;
+  color: white;
+}
+
+.esqueceu {
+  margin: 20px;
+}
+
+.entrar {
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  color: black;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(38, 90, 233);
+}
+
+p {
+  color: white;
+}
+
+.titulo {
+  text-align: center;
+}
