@@ -1,0 +1,20 @@
+:root {
+    --dominante: rgb(48, 48, 48);
+    --secundaria: rgb(218, 113, 15);
+    ---destaque: rgb(255, 220, 21);
+}
+
+.clear {
+    --dominante: rgb(226, 226, 226);
+    --secundaria: rgb(218, 113, 15);
+    ---destaque: rgb(255, 220, 21);
+}
+
+body {
+    background-color: var(--dominante);
+    transition: all 5s ease-in-out;
+}
+
+button {
+    background-color: var(---destaque);
+}

@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bannerimg {
+  height: 35px;
+}
+
+body {
+  background-color: rgb(29, 22, 37);
+}
+svg {
+  height: 20px;
+  padding: 25px;
+  color: white;
+}
+
+.conteiner {
+  margin: 0 auto;
+  width: 58%;
+  transform: translateY(-55px);
+}
+
+.art {
+  width: 100%;
+}
+
+.conteiner2 {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.paragraph {
+  display: flex;
+  width: 100%;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  background-color: rgb(238, 169, 186);
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.consoles {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ps {
+  height: 20px;
+  margin: 0;
+}
+
+.xbox {
+  height: 20px;
+}
+
+@keyframes glow {
+  0% {
+    background-color: rgb(243, 168, 187);
+  }
+
+  50% {
+    background-color: rgb(255, 215, 224);
+  }
+}
+
+.botao {
+  animation: glow 4s linear infinite;
+}
