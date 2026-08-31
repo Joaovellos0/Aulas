@@ -1,18 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
 header {
-    width: 100vw;
-    height: 40vh;
-    background: linear-gradient(320deg, rgb(17, 17, 17), rgb(138, 138, 138));
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(320deg, rgb(9, 9, 9) 30%, rgb(138, 138, 138));
     border-bottom: 2px solid rgb(138, 138, 138);
 }
 
 .headImg {
     width: 100%;
-    height: 26vh;
+    height: 45vh;
     border-bottom: 2px solid rgb(138, 138, 138);
     
 }
@@ -25,12 +26,12 @@ header {
 
 .siteLogo {
     display: flex;
-    width: 12vw;
+    width: 15vw;
     height: 10vh;
-   
 }
 
 #logoSite {
+    border: 2px solid rgb(9, 9, 9);
     width: 100%;
 }
 
@@ -44,43 +45,265 @@ nav {
 .logos {
     display: flex;
     justify-content: end;
+    gap: 10px;
+}
+
+.socialMediaI:hover {
+    transform: scale(1.2);
+}
+
+.busca {
+    color: rgb(233, 0, 0);
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    font-size: 22px;
 }
 
 
 a {
+    font-weight: bold;
     color: white;
     text-decoration: 0;
 }
 
 body {
-    height: 100vh;
-    width: 100%;
     background-image: url(Design\ sem\ nome.gif);
     object-fit: cover; 
 }
 
-main {
-    margin-top: 9px;
-}
-
 .wideConteiner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 9px;
+    padding: 4px;
     height: 20vh;
-    background-color: rgb(17, 17, 17);
+    width: 100vw;
+    background-color: rgb(9, 9, 9);
 }
 
-.conteinerleft {
-    color: white;
+.promoRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 4px;
+    height: 100%;
+}
+
+.promoLinks {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.promoLinks:hover {
+    background-color: rgb(239, 238, 238);
+    color: black;
+}
+
+.ilustrationBox {
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 8px;
+}
+
+.gridIlustration {
+    width: 100%;
+    height: 100%;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 46vw;
+    padding: 20px;
+    background-color: rgb(9, 9, 9);
+}
+
+.leftTitle {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border: 5px solid rgb(3, 3, 3);
+    height: 60px;
+    background-color: rgb(3, 3, 3);
+}
+
+.leftConteinerGrd {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 10px;
+}
+
+.grdCardBox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(239, 238, 238);
+}
+
+.grdCardMiddle {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.grdTitleLink {
+    color: black;
+}
+
+.grdTitleLink:hover {
+    color: rgb(233, 0, 0);
+}
+
+.imgBox {
+    height: 150px;
+    width: 250px;
+}
+
+.grdImg {
+    height: 100%;
+    width: 100%;
+}
+
+.grdTextBox {
+    width: 100%;
+}
+
+.logoBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logoLeft {
+   height: 200px;
+}
+
+.logoIlustration {
+    width: 100%;
+    height: 100%;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 12px;
+    margin-top: 12px;
+    width: 72vw;
+}
+
+.videoCard {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+    background-color: rgb(9, 9, 9);
+}
+
+.videoBox {
+    height: 230px;
+}
+
+.videoIlustration {
+    width: 100%;
+    height: 100%;
+}
+
+.videoInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    height: 100%;
+    background-color: rgb(239, 238, 238);
+}
+
+.titleBox {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 100px;
+    color: rgb(239, 238, 238);
+    background-color: rgb(9, 9, 9);
+}
+
+.titleLink:hover {
+    color: rgb(233, 0, 0);
+}
+
+.textLink {
+    color: black;
+}
+
+.textLink:hover {
+    color: rgb(233, 0, 0);
+}
+
+.rightConteiner {
+    background-color: rgb(9, 9, 9);
+}
+
+.leftColumnRight {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 100%;
     width: 40vw;
-    height: 100vh;
-    background-color: rgb(17, 17, 17);
+    
+}
+
+.columnContent {
+    margin-bottom: 20px;
+}
+
+.columnImgBox {
+    height: 200px;
+    background-color: aqua;
+}
+
+.columnTitle {
+    padding: 5px;
+}
+
+.columnText {
+    color: white;
+    padding-left: 5px;
+    margin-bottom: 20px;
+
+}
+
+.columnTitle:hover {
+    color: rgb(233, 0, 0);
+}
+
+.boxImg {
+    width: 100%;
+    height: 100%;
 }
 
 footer {
-    background: linear-gradient(270deg, rgb(233, 233, 233), rgb(184, 184, 184));
-    margin-top: 9px;
+    color: rgb(239, 238, 238);
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(138deg, rgb(9, 9, 9) 30%, rgb(138, 138, 138));
+    border-bottom: 2px solid rgb(138, 138, 138);
+    border-top: 2px solid rgb(138, 138, 138);
 }
