@@ -22,7 +22,7 @@ class Personagem:
                 print(f"{self.nome} atingiu o nivel maximo.")
                 break
             else:
-                escolha = input("aperte (ENTER) para começar ganhar xp.")
+                escolha = input("aperte (ENTER) para ganhar xp.")
                 limpar()
 
                 if escolha == "":
@@ -30,7 +30,7 @@ class Personagem:
                     self.experiencia += xp
                     print(f"{self.nome} ganhou +{xp} de xp")
                     print(f"Próximo nível ({self.experiencia}%)")
-                    time.sleep(1)
+                    time.sleep(1.2)
                     limpar()
 
                     if self.experiencia >= 100:
