@@ -6,7 +6,7 @@ def limpar():
 
 
 class Musica:
-    def __init__(self, titulo, artista):
+    def __init__(self, titulo:str, artista:str):
         self.titulo = titulo
         self.artista = artista
         self.views = 0
@@ -14,7 +14,7 @@ class Musica:
     def play(self):
         self.views += 1
         print(f"A musicia {self.titulo} de {self.artista} esta sendo tocada")
-        print(self.views)
+        print(f"Vezes tocadas: {self.views}")
 
 
 escolha_usuario = Musica(
@@ -25,9 +25,9 @@ escolha_usuario = Musica(
 while True:
 
     escolha_usuario.play()
-    opcao = input("Aperte (n) caso queira parar. ")
+    opcao = input("Aperte (0) caso queira parar. ")
 
-    if opcao == "n":
+    if opcao == "0":
         break
     else:
         limpar()
