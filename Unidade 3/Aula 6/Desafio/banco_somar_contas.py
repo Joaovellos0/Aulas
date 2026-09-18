@@ -9,7 +9,7 @@ class Conta:
     def __init__(self, titular: str, numero: str):
         self._titular = titular
         self._numero = numero
-        self._saldo = 0
+        self._saldo = 1600
 
     def __add__(self, other):
         if isinstance(other, Conta):
@@ -62,40 +62,6 @@ class ContaPoupanca(Conta):
 user = ContaCorrente("Pedrinho", "12345")
 user2 = ContaPoupanca("Marcello MAMA MIA", "67891")
 
-escolher_usuario = input("Escolha (P) ou (M)\n").upper()
 
-if escolher_usuario == "P":
-    escolher_usuario = user
-
-    print(f"Bem Vindo {escolher_usuario._titular}\nFaça seu primeiro deposito.\n")
-    user.depositar()
-
-    while True:
-        escolha = input(
-            "O que deseja fazer agora? (DEPOSITAR) (SACAR) (SAIR)\n"
-        ).upper()
-        if escolha == "DEPOSITAR":
-            escolher_usuario.depositar()
-        elif escolha == "SACAR":
-            escolher_usuario.sacar()
-        elif escolha == "SAIR":
-            break
-
-elif escolher_usuario == "M":
-    escolher_usuario = user2
-
-    print(f"Bem Vindo {escolher_usuario._titular}\nFaça seu primeiro deposito.\n")
-    escolher_usuario.depositar()
-
-    while True:
-        escolha = input("O que deseja fazer agora? (INVESTIR) (SAIR)\n").upper()
-
-        if escolha == "INVESTIR":
-            escolher_usuario.aplicar_rendimento()
-
-        elif escolha == "SAIR":
-            break
-
-# Somar as contas corrente + poupança  OBS.: Alterar o saldo na superclasse conta para algum valor > 0.
-# resultado = user.__add__(user2)
-# print(resultado)
+resultado = user.__add__(user2)
+print(f"O saldo de {user._titular} + o saldo de {user2._titular} é {resultado}")
