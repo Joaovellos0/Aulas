@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 8vh;
+    background-color: rgb(185, 185, 185);
+    display: flex;
+    justify-content: center;
+    border: solid 5px rgb(143, 142, 142);
+    border-width: 5px 0 5px 0;
+}
+
+.headerConteiner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.sitelogo {
+    height: 90%;
+    width: 5vw;
+}
+
+.logosite {
+    height: 100%;
+    width: 100%;
+}

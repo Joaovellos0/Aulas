@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}{% endblock title %}
+    <link rel="stylesheet" href={% static  'css/style.css' %}>
+</head>
+<body>
+    <header>
+        <div class="header_conteiner">
+            <div class="header_content">
+                <div class="logo_conteiner">
+                    <a class="site_logo" href={% url "home" %}>
+                        <img src="logo" alt="logo do site">
+                    </a>
+                </div>
+                <nav class="navigation_conteiner">
+                    <li>
+                        <ul>
+                            <a class="inicio" href="" >inicio</a>
+                        </ul>
+                        <ul>
+                            <a href="">produtos</a>
+                        </ul>
+                        <ul>
+                            <a href="">categorias</a>
+                        </ul>
+                        <ul>
+                            <a href="">sobre</a>
+                        </ul>
+                        <ul>
+                            <a href="">contato</a>
+                        </ul>
+                    </li>
+                    <input type="text" class="barra_de_busca">
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {% block conteudo_principal %}{% endblock conteudo_principal %}
+    </main>
+
+</body>
+</html>

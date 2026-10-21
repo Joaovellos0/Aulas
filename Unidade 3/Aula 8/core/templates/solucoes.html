@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block conteudo_principal %}
+<h1>ESSA É A PAGINA SOLUÇÕES</h1>
+<h2>AQUI VAO MEUS PROJETOS</h2>
+
+{% for solucao in lista_solucoes %}
+<div>
+    <p>{{solucao.titulo}}</p>
+    <p>{{solucao.descricao}}</p>
+    <p>{{solucao.preco}}</p>
+    <img src={{solucao.imagem_url}} alt="">
+</div>
+{% endfor %}
+{% endblock conteudo_principal %}
