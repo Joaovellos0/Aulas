@@ -13,13 +13,25 @@ def home(request):
     guitarras_adicionadas = Guitarra.objects.filter(disponibilidade=True).order_by("-id")[:3]
 
     # Banner em destaque: guitarra que possui banner cadastrado
+    # guitarra_banner = (
+    #     Guitarra.objects.filter(disponibilidade=True)
+    #     .exclude(banner="")
+    #     .exclude(banner__isnull=True)
+    #     .exclude(destaque=False)
+    #     .order_by("-id")
+    #     .first()
+    # )
+
     guitarra_banner = (
         Guitarra.objects.filter(disponibilidade=True)
         .exclude(banner="")
         .exclude(banner__isnull=True)
+        .exclude(destaque=False)
         .order_by("-id")
-        .first()
+        
     )
+    print("lista de guitarras com banner")
+    print(guitarra_banner)
     # Se nenhuma tiver banner específico, pega a mais recente
     if not guitarra_banner:
         guitarra_banner = Guitarra.objects.filter(disponibilidade=True).order_by("-id").first()

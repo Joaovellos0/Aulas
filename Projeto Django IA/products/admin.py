@@ -15,7 +15,7 @@ class GuitarraAdmin(admin.ModelAdmin):
     inlines = [ImagemGuitarraInline]
     fieldsets = (
         ("Informações Básicas", {
-            "fields": ("marca", "modelo", "preco", "disponibilidade", "descricao")
+            "fields": ("marca", "modelo", "preco", "disponibilidade", "destaque", "descricao")
         }),
         ("Imagens", {
             "fields": ("ilustracao", "banner")

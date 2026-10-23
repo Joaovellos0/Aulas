@@ -104,35 +104,56 @@
 </section>
 
 <!-- Seção: Banner de Destaque (Duas Colunas) -->
-<section class="banner_conteiner">
+{% comment %} <section class="banner_conteiner">
     {% if guitarra_banner %}
-    <div class="banner_contents_box">
-        <div class="banner_title_box">
-            <span class="banner_tag">PRODUTO EM DESTAQUE</span>
-            <hr class="banner_underline">
-        </div>
-        <div class="banner_content_box">
-            <div class="banner_product_title_box">
-                <a href="{% url 'detalhe_guitarra' guitarra_banner.id %}">
-                    <h2 class="banner_product_title">{{ guitarra_banner.marca.marca }} {{ guitarra_banner.modelo }}</h2>
-                </a>
+        {% for guitarra in guitarra_banner %}
+            <div class="banner_card">
+                <div class="banner_contents_box">
+                    <div class="banner_title_box">
+                        <span class="banner_tag">PRODUTO EM DESTAQUE</span>
+                        <hr class="banner_underline">
+                    </div>
+                    <div class="banner_content_box">
+                        <div class="banner_product_title_box">
+                            <a href="{% url 'detalhe_guitarra' guitarra.id %}">
+                                <h2 class="banner_product_title">{{ guitarra.marca.marca }} {{ guitarra.modelo }}</h2>
+                            </a>
+                        </div>
+                        <div class="banner_price_highlight">
+                            <span class="banner_price_label">A partir de</span>
+                            <span class="banner_price_val">R$ {{ guitarra.preco }}</span>
+                        </div>
+                    </div>
+                    <div class="banner_btn_box">
+                        <a href="{% url 'detalhe_guitarra' guitarra.id %}" 
+                        class="site_btn banner_btn btn_view_details_banner">
+                            VER DETALHES
+                        </a>
+                    </div>
+                </div>
+                <div class="banner_img_box" {% if guitarra.banner %}style="background-image: url('{{ guitarra.banner.url }}');"{% elif guitarra.ilustracao %}style="background-image: url('{{ guitarra.ilustracao.url }}');"{% endif %}>
+                </div>
             </div>
-            <div class="banner_price_highlight">
-                <span class="banner_price_label">A partir de</span>
-                <span class="banner_price_val">R$ {{ guitarra_banner.preco }}</span>
-            </div>
-        </div>
-        <div class="banner_btn_box">
-            <a href="{% url 'detalhe_guitarra' guitarra_banner.id %}" 
-               class="site_btn banner_btn btn_view_details_banner">
-                VER DETALHES
-            </a>
-        </div>
-    </div>
-    
-    <div class="banner_img_box" {% if guitarra_banner.banner %}style="background-image: url('{{ guitarra_banner.banner.url }}');"{% elif guitarra_banner.ilustracao %}style="background-image: url('{{ guitarra_banner.ilustracao.url }}');"{% endif %}>
-    </div>
+        {% endfor %}
     {% endif %}
+</section> {% endcomment %}
+
+<section class="banner_conteiner" id="banner_carousel">
+    <div class="banner_wrapper">
+        {% if guitarra_banner %}
+            {% for guitarra in guitarra_banner %}
+                <div class="banner_slide {% if forloop.first %}active{% endif %}" data-banner-index="{{ forloop.counter0 }}">
+                    <div class="banner_card">
+                        <div class="banner_contents_box">
+                            <!-- Conteúdo do banner (títulos, preços, botões) -->
+                        </div>
+                        <div class="banner_img_box" {% if guitarra.banner %}style="background-image: url('{{ guitarra.banner.url }}');"{% elif guitarra.ilustracao %}style="background-image: url('{{ guitarra.ilustracao.url }}');"{% endif %}></div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <!-- Setas de navegação do banner, caso queira controlar via JS -->
 </section>
 
 <!-- Seção: Vitrine em Carrossel (Estilo Ibanez Dinâmico Sem Limite de Produtos) -->
