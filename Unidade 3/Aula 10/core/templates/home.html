@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock title %}
+
+{% block conteudo_principal %}
+
+<div class="hero">
+    <div class="hero_coneiner">
+        <h1 class="title">Lorem ipsum dolor sit.</h1>
+        <h2 class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis vitae nulla eius tempora distinctio, explicabo obcaecati deleniti atque fugiat et aut natus delectus exercitationem? Ab, veritatis. Nesciunt, illo nam. Architecto deleniti voluptates magnam, ad amet laborum neque consectetur odit.
+        </h2>
+    </div>
+</div>
+
+<main>
+    <div class="title">
+        <h2>Produtos</h2>
+    </div>
+    {% block content %}
+    
+        {% for produto in produtos %}
+        
+            {{produto.nome}}
+            R$ {{produto.preco}}
+            {{produto.descricao}}
+
+
+        {% endfor %}
+
+    {% endblock content %}
+</main>
+
+{% endblock conteudo_principal %}
